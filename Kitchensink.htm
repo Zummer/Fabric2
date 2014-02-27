@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://fabricjs.com/kitchensink/ -->
+<html lang="en" ng-app="kitchensink" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{border-spacing:1px 1px;-ms-zoom:1.0001;}.ng-animate-active{border-spacing:0px 0px;-ms-zoom:1;}</style>
+    <meta charset="utf-8">
+
+    <title>Kitchensink | Fabric.js Demos</title>
+
+    <link rel="stylesheet" href="http://fabricjs.com/css/master.css">
+    <link rel="stylesheet" href="http://fabricjs.com/css/prism.css">
+    <style>
+      pre { margin-left: 15px !important }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="../lib/excanvas.js"></script>
+    <![endif]-->
+
+    <script id="twitter-wjs" src="./Kitchensink_files/widgets.js"></script><script async="" src="./Kitchensink_files/load.js"></script><script type="text/javascript" async="" src="./Kitchensink_files/ga.js"></script><script src="./Kitchensink_files/prism.js"></script>
+    <script src="./Kitchensink_files/fabric.js"></script>
+    <script src="./Kitchensink_files/master.js"></script>
+
+    <script src="./Kitchensink_files/angular.js"></script>
+  </head>
+  <body data-twttr-rendered="true" style="">
+    <ul id="header">
+  <li><a href="http://fabricjs.com/">Home</a></li>
+  <li><a href="http://fabricjs.com/demos">Demos</a></li>
+  <li><a href="http://fabricjs.com/articles">Tutorial</a></li>
+  <li><a href="http://fabricjs.com/docs">Docs</a></li>
+  <li><a href="http://fabricjs.com/build">Custom Build</a></li>
+  <li><a href="http://fabricjs.com/help">Support</a></li>
+  <li><a href="http://fabricjs.com/test">Tests/Benchmarks</a></li>
+  <li><a href="http://fabricjs.com/team">Team</a></li>
+
+  <li class="secondary">
+    <a href="https://codeclimate.com/repos/526a0ed089af7e6cf2001389/feed">
+      <img src="./Kitchensink_files/gpa.png">
+    </a>
+    <a href="http://travis-ci.org/#!/kangax/fabric.js">
+      <img src="./Kitchensink_files/fabric.js.png">
+    </a>
+  </li>
+  <li class="gittip secondary">
+    <iframe style="border: 0; margin: 0; padding: 0;" src="./Kitchensink_files/widget.htm" width="48pt" height="22pt"></iframe>
+  </li>
+  <li class="flattr secondary">
+    <iframe src="./Kitchensink_files/saved_resource.htm" class="FlattrButton" width="110" height="20" frameborder="0" scrolling="no" title="Flattr" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+    <noscript>
+      &lt;a href="http://flattr.com/thing/391332/Fabric-js" target="_blank"&gt;
+        &lt;img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /&gt;
+      &lt;/a&gt;
+    </noscript>
+  </li>
+  <li class="github secondary">
+    <iframe src="./Kitchensink_files/github-btn.htm" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+  </li>
+  <li class="twitter secondary">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Kitchensink_files/follow_button.1392079123.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 215px; height: 20px;"></iframe>
+  </li>
+</ul>
+
+<script>
+(function() {
+
+  if (document.location.hostname === 'localhost') {
+    var links = document.getElementById('header').getElementsByTagName('a');
+    for (var i = 0, len = links.length; i < len; i++) {
+      // very retarted fix but fuck it
+      links[i].href = links[i].href.replace('fabricjs.com', 'localhost:4000');
+    }
+  }
+  else {
+    var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+    s.async = true;
+    s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+    t.parentNode.insertBefore(s, t);
+
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  }
+})();
+</script>
+
+
+    <div id="bd-wrapper" ng-controller="CanvasControls" class="ng-scope">
+      <h2><span>Fabric.js demos</span> · Kitchensink</h2>
+
+      <!--[if IE]><script src="../lib/fonts/Delicious.font.js"></script><![endif]-->
+
+<script src="./Kitchensink_files/jquery.js"></script>
+<script src="./Kitchensink_files/bootstrap.js"></script>
+<script src="./Kitchensink_files/paster.js"></script>
+
+<link rel="stylesheet" href="http://fabricjs.com/css/bootstrap.css">
+<link rel="stylesheet" href="http://fabricjs.com/css/kitchensink.css">
+
+<link href="./Kitchensink_files/css" rel="stylesheet" type="text/css">
+<link href="./Kitchensink_files/css(1)" rel="stylesheet" type="text/css">
+
+<div style="position:relative;width:704px;float:left;" id="canvas-wrapper">
+
+  <div id="canvas-controls">
+    <div id="complexity">
+      Canvas complexity (number of paths):
+      <strong class="ng-binding">2</strong>
+    </div>
+
+    <div id="canvas-background">
+      <label for="canvas-background-picker">Canvas background:</label>
+      <input type="color" bind-value-to="canvasBgColor">
+    </div>
+  </div>
+
+  <canvas id="canvas" width="700" height="600"></canvas>
+
+  <div id="color-opacity-controls" ng-show="canvas.getActiveObject()" class="ng-hide">
+
+    <label for="opacity">Opacity: </label>
+    <input value="100" type="range" bind-value-to="opacity">
+
+    <label for="color" style="margin-left:10px">Color: </label>
+    <input type="color" style="width:40px" bind-value-to="fill">
+  </div>
+
+  <div id="text-wrapper" style="margin-top: 10px" ng-show="getText()" class="ng-hide">
+
+    <textarea bind-value-to="text"></textarea>
+
+    <div id="text-controls">
+      <label for="font-family" style="display:inline-block">Font family:</label>
+      <select id="font-family" class="btn-object-action" bind-value-to="fontFamily">
+        <option value="arial">Arial</option>
+        <option value="helvetica" selected="">Helvetica</option>
+        <option value="myriad pro">Myriad Pro</option>
+        <option value="delicious">Delicious</option>
+        <option value="verdana">Verdana</option>
+        <option value="georgia">Georgia</option>
+        <option value="courier">Courier</option>
+        <option value="comic sans ms">Comic Sans MS</option>
+        <option value="impact">Impact</option>
+        <option value="monaco">Monaco</option>
+        <option value="optima">Optima</option>
+        <option value="hoefler text">Hoefler Text</option>
+        <option value="plaster">Plaster</option>
+        <option value="engagement">Engagement</option>
+      </select>
+      <br>
+      <label for="text-align" style="display:inline-block">Text align:</label>
+      <select id="text-align" class="btn-object-action" bind-value-to="textAlign">
+        <option value="Left">Left</option>
+        <option value="Center">Center</option>
+        <option value="Right">Right</option>
+        <option value="Justify">Justify</option>
+      </select>
+      <div>
+        <label for="text-bg-color">Background color:</label>
+        <input type="color" value="" id="text-bg-color" size="10" class="btn-object-action" bind-value-to="bgColor">
+      </div>
+      <div>
+        <label for="text-lines-bg-color">Background text color:</label>
+        <input type="color" value="" id="text-lines-bg-color" size="10" class="btn-object-action" bind-value-to="textBgColor">
+      </div>
+      <div>
+        <label for="text-stroke-color">Stroke color:</label>
+        <input type="color" value="" id="text-stroke-color" class="btn-object-action" bind-value-to="strokeColor">
+      </div>
+      <div>
+        <label for="text-stroke-width">Stroke width:</label>
+        <input type="range" value="1" min="1" max="5" id="text-stroke-width" class="btn-object-action" bind-value-to="strokeWidth">
+      </div>
+      <div>
+        <label for="text-font-size">Font size:</label>
+        <input type="range" value="" min="1" max="120" step="1" id="text-font-size" class="btn-object-action" bind-value-to="fontSize">
+      </div>
+      <div>
+        <label for="text-line-height">Line height:</label>
+        <input type="range" value="" min="0" max="10" step="0.1" id="text-line-height" class="btn-object-action" bind-value-to="lineHeight">
+      </div>
+    </div>
+    <div id="text-controls-additional">
+      <button type="button" class="btn btn-object-action" ng-click="toggleBold()" ng-class="{&#39;btn-inverse&#39;: isBold()}">
+        Bold
+      </button>
+      <button type="button" class="btn btn-object-action" id="text-cmd-italic" ng-click="toggleItalic()" ng-class="{&#39;btn-inverse&#39;: isItalic()}">
+        Italic
+      </button>
+      <button type="button" class="btn btn-object-action" id="text-cmd-underline" ng-click="toggleUnderline()" ng-class="{&#39;btn-inverse&#39;: isUnderline()}">
+        Underline
+      </button>
+      <button type="button" class="btn btn-object-action" id="text-cmd-linethrough" ng-click="toggleLinethrough()" ng-class="{&#39;btn-inverse&#39;: isLinethrough()}">
+        Linethrough
+      </button>
+      <button type="button" class="btn btn-object-action" id="text-cmd-overline" ng-click="toggleOverline()" ng-class="{&#39;btn-inverse&#39;: isOverline()}">
+        Overline
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="commands" ng-click="maybeLoadShape($event)">
+
+  <ul class="nav nav-tabs">
+    <li><a href="http://fabricjs.com/kitchensink/#simple-shapes" data-toggle="tab">Simple</a></li>
+    <li><a href="http://fabricjs.com/kitchensink/#svg-shapes" data-toggle="tab">SVG</a></li>
+    <li class="active"><a href="http://fabricjs.com/kitchensink/#object-controls-pane" data-toggle="tab">Controls</a></li>
+    <li><a href="http://fabricjs.com/kitchensink/#load-svg-pane" data-toggle="tab">Load SVG</a></li>
+    <li><a href="http://fabricjs.com/kitchensink/#execute-code" data-toggle="tab">Execute</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane" id="svg-shapes">
+      <p>Add <strong>SVG shapes</strong> to canvas:</p>
+
+      <ul class="svg-shapes">
+
+      </ul>
+    </div>
+
+    <div class="tab-pane" id="simple-shapes">
+      <p>Add <strong>simple shapes</strong> to canvas:</p>
+      <p>
+        <button type="button" class="btn rect" ng-click="addRect()">Rectangle</button>
+        <button type="button" class="btn circle" ng-click="addCircle()">Circle</button>
+        <button type="button" class="btn triangle" ng-click="addTriangle()">Triangle</button>
+        <button type="button" class="btn line" ng-click="addLine()">Line</button>
+        <button type="button" class="btn polygon" ng-click="addPolygon()">Polygon</button>
+      </p>
+
+      <p>
+        <button class="btn" ng-click="addText()">Add text</button>
+      </p>
+
+      <p>Add <strong>images</strong> to canvas:</p>
+      <p>
+        <button type="button" class="btn image1" ng-click="addImage1()">Image 1 (pug)</button>
+        <button type="button" class="btn image2" ng-click="addImage2()">Image 2 (google)</button>
+        <button type="button" class="btn image3" n-click="addImage3()">Image 3 (printio)</button>
+      </p>
+
+      <p>Add <strong>gradient-based shapes</strong> to canvas:</p>
+
+      <p>
+        <button class="btn shape" id="shape74">Gradient 1</button>
+        <button class="btn shape" id="shape66">Gradient 2</button>
+        <button class="btn shape" id="shape75">Gradient 3</button>
+        <button class="btn shape" id="shape148">Gradient 4</button>
+      </p>
+
+      <p>Add <strong>arcs</strong> and misc to canvas:</p>
+
+      <p>
+        <button class="btn shape" id="shape104">Arc(s) 1</button>
+        <button class="btn shape" id="shape105">Arc(s) 2</button>
+        <button class="btn shape" id="shape106">Arc(s) 3</button>
+        <button class="btn shape" id="shape107">Arc(s) 4</button>
+      </p>
+      <p>
+        <button class="btn shape" id="shape103">Transformed paths</button>
+      </p>
+      <p>
+        <button class="btn shape" id="shape54">Image</button>
+      </p>
+    </div>
+
+    <div class="tab-pane active" id="object-controls-pane">
+      <div id="global-controls">
+        <p>
+          Rasterize canvas to
+          <button class="btn btn-success" id="rasterize" ng-click="rasterize()">
+            Image
+          </button>
+          <button class="btn btn-success" id="rasterize-svg" ng-click="rasterizeSVG()">
+            SVG
+          </button>
+          <button class="btn btn-success" id="rasterize-json" ng-click="rasterizeJSON()">
+            JSON
+          </button>
+        </p>
+        <p>
+          <button class="btn btn-danger clear" ng-click="confirmClear()">Clear canvas</button>
+        </p>
+      </div>
+
+      <div class="object-controls" object-buttons-enabled="getSelected()">
+
+        <div style="margin-top:10px;">
+          <p>
+            <button class="btn btn-object-action" id="remove-selected" ng-click="removeSelected()" disabled="">
+              Remove selected object/group
+            </button>
+          </p>
+
+          <button class="btn btn-lock btn-object-action ng-binding" ng-click="setHorizontalLock(!getHorizontalLock())" ng-class="{&#39;btn-inverse&#39;: getHorizontalLock()}" disabled="">
+            Lock horizontal movement
+          </button>
+          <br>
+          <button class="btn btn-lock btn-object-action ng-binding" ng-click="setVerticalLock(!getVerticalLock())" ng-class="{&#39;btn-inverse&#39;: getVerticalLock()}" disabled="">
+            Lock vertical movement
+          </button>
+          <br>
+          <button class="btn btn-lock btn-object-action ng-binding" ng-click="setScaleLockX(!getScaleLockX())" ng-class="{&#39;btn-inverse&#39;: getScaleLockX()}" disabled="">
+            Lock horizontal scaling
+          </button>
+          <br>
+          <button class="btn btn-lock btn-object-action ng-binding" ng-click="setScaleLockY(!getScaleLockY())" ng-class="{&#39;btn-inverse&#39;: getScaleLockY()}" disabled="">
+            Lock vertical scaling
+          </button>
+          <br>
+          <button class="btn btn-lock btn-object-action ng-binding" ng-click="setRotationLock(!getRotationLock())" ng-class="{&#39;btn-inverse&#39;: getRotationLock()}" disabled="">
+            Lock rotation
+          </button>
+        </div>
+
+        <div style="margin-top:10px">
+          <p>
+            <span style="margin-right: 10px">Origin X: </span>
+            <label>
+              Left
+              <input type="radio" name="origin-x" class="origin-x btn-object-action" value="left" bind-value-to="originX" disabled="">
+            </label>
+            <label>
+              Center
+              <input type="radio" name="origin-x" class="origin-x btn-object-action" value="center" bind-value-to="originX" disabled="">
+            </label>
+            <label>
+              Right
+              <input type="radio" name="origin-x" class="origin-x btn-object-action" value="right" bind-value-to="originX" disabled="">
+            </label>
+          </p>
+          <p>
+            <span style="margin-right: 10px">Origin Y: </span>
+            <label>
+              Top
+              <input type="radio" name="origin-y" class="origin-y btn-object-action" value="top" bind-value-to="originY" disabled="">
+            </label>
+            <label>
+              Center
+              <input type="radio" name="origin-y" class="origin-y btn-object-action" value="center" bind-value-to="originY" disabled="">
+            </label>
+            <label>
+              Bottom
+              <input type="radio" name="origin-y" class="origin-y btn-object-action" value="bottom" bind-value-to="originY" disabled="">
+            </label>
+          </p>
+        </div>
+
+        <div style="margin-top:10px;">
+          <button id="send-backwards" class="btn btn-object-action" ng-click="sendBackwards()" disabled="">Send backwards</button>
+          <button id="send-to-back" class="btn btn-object-action" ng-click="sendToBack()" disabled="">Send to back</button>
+        </div>
+
+        <div style="margin-top:4px;">
+          <button id="bring-forward" class="btn btn-object-action" ng-click="bringForward()" disabled="">Bring forwards</button>
+          <button id="bring-to-front" class="btn btn-object-action" ng-click="bringToFront()" disabled="">Bring to front</button>
+        </div>
+
+        <div style="margin-top:10px;">
+          <button id="gradientify" class="btn btn-object-action" ng-click="gradientify()" disabled="">
+            Gradientify
+          </button>
+          <button id="shadowify" class="btn btn-object-action" ng-click="shadowify()" disabled="">
+            Shadowify
+          </button>
+          <button id="patternify" class="btn btn-object-action" ng-click="patternify()" disabled="">
+            Patternify
+          </button>
+          <button id="clip" class="btn btn-object-action" ng-click="clip()" disabled="">
+            Clip
+          </button>
+        </div>
+      </div>
+      <div style="margin-top:10px;" id="drawing-mode-wrapper">
+
+        <button id="drawing-mode" class="btn btn-info ng-binding" ng-click="setFreeDrawingMode(!getFreeDrawingMode())" ng-class="{&#39;btn-inverse&#39;: getFreeDrawingMode()}">
+          Enter free drawing mode
+        </button>
+
+        <div id="drawing-mode-options" ng-show="getFreeDrawingMode()" class="ng-hide">
+          <label for="drawing-mode-selector">Mode:</label>
+          <select id="drawing-mode-selector" bind-value-to="drawingMode">
+            <option value="Pencil">Pencil</option>
+            <option value="Circle">Circle</option>
+            <option value="Spray">Spray</option>
+            <option value="Pattern">Pattern</option>
+
+            <option value="hline">hline</option>
+            <option value="vline">vline</option>
+            <option value="square">square</option>
+            <option value="diamond">diamond</option>
+            <option value="texture">texture</option>
+          </select>
+          <br>
+          <label for="drawing-line-width">Line width:</label>
+          <input type="range" value="30" min="0" max="150" bind-value-to="drawingLineWidth">
+          <br>
+          <label for="drawing-color">Line color:</label>
+          <input type="color" value="#005E7A" bind-value-to="drawingLineColor">
+          <br>
+          <label for="drawing-shadow-width">Line shadow width:</label>
+          <input type="range" value="0" min="0" max="50" bind-value-to="drawingLineShadowWidth">
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="load-svg-pane">
+      <textarea id="svg-console" bind-value-to="consoleSVG">      </textarea>
+      <button type="button" class="btn btn-info" ng-click="loadSVG()">
+        Load
+      </button>
+      <button type="button" class="btn" ng-click="loadSVGWithoutGrouping()">
+        Load without grouping
+      </button>
+    </div>
+
+      <div class="tab-pane" id="execute-code">
+        <textarea id="canvas-console" bind-value-to="console">        </textarea>
+        <button type="button" class="btn btn-info" ng-click="execute()">Execute</button>
+      </div>
+  </div>
+
+</div>
+
+<!-- <script src="../../lib/centering_guidelines.js"></script>
+<script src="../../lib/aligning_guidelines.js"></script> -->
+
+<script src="./Kitchensink_files/font_definitions.js"></script>
+
+<script>
+  var kitchensink = { };
+  var canvas = new fabric.Canvas('canvas');
+</script>
+
+<script src="./Kitchensink_files/utils.js"></script>
+<script src="./Kitchensink_files/app_config.js"></script>
+<script src="./Kitchensink_files/controller.js"></script>
+
+    </div>
+
+    <script>
+      (function(){
+        var mainScriptEl = document.getElementById('main');
+        if (!mainScriptEl) return;
+        var preEl = document.createElement('pre');
+        var codeEl = document.createElement('code');
+        codeEl.innerHTML = mainScriptEl.innerHTML;
+        codeEl.className = 'language-javascript';
+        preEl.appendChild(codeEl);
+        document.getElementById('bd-wrapper').appendChild(preEl);
+      })();
+    </script>
+
+    <script>
+(function() {
+  fabric.util.addListener(fabric.window, 'load', function() {
+    var canvas = this.__canvas || this.canvas,
+        canvases = this.__canvases || this.canvases;
+
+    canvas && canvas.calcOffset && canvas.calcOffset();
+
+    if (canvases && canvases.length) {
+      for (var i = 0, len = canvases.length; i < len; i++) {
+        canvases[i].calcOffset();
+      }
+    }
+  });
+})();
+</script>
+
+
+  
+
+</body></html>

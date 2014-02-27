@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="kitchensink">
+<meta charset="utf-8">
+<head>
+    <title></title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: myFirstFont;
+            src: local('myFirstFont'), url('./opentype/fonts/Roboto-Black.ttf') format('truetype');
+            /*font-style: normal;
+            font-weight: 400;*/
+        }
+    </style>
+
+
+    <script src="./Kitchensink_files/fabric.js"></script>
+    <script src="./Kitchensink_files/angular.js"></script>
+
+</head>
+<body>
+<div id="bd-wrapper" ng-controller="CanvasControls">
+    <h2><span style="font-family: myFirstFont">Fabric.js демо</span> · Плоттерная резка</h2>
+
+    <canvas id="canvas" width="600" height="400" style="border : solid red 1px;"></canvas>
+    <!--style="position:relative; width:604px; float:left;-->
+
+    <div id="text-wrapper" style="margin-top: 10px">
+        <textarea bind-value-to="styles" rows="6"></textarea>
+        <br>
+        <label for="fontSize">Размер шрифта</label><input id="fontSize" type="text" bind-value-to="fontSize">
+        <br>
+        <label>Длина кривых</label><textarea rows="6" bind-value-to="pathLength"></textarea>
+        <br>
+
+    </div>
+
+    <div id="commands">
+        <button type="button" ng-click="addText()">Добавить текст</button>
+    </div>
+
+    <script>
+        //var kitchensink = { };
+        var canvas = new fabric.Canvas('canvas');
+    </script>
+    <script src="./Kitchensink_files/utils.js"></script>
+    <script src="./Kitchensink_files/app_config.js"></script>
+    <script src="./Kitchensink_files/controller.js"></script>
+</div>
+
+<script>
+    (function () {
+        var mainScriptEl = document.getElementById('main');
+        if (!mainScriptEl) return;
+        var preEl = document.createElement('pre');
+        var codeEl = document.createElement('code');
+        codeEl.innerHTML = mainScriptEl.innerHTML;
+        codeEl.className = 'language-javascript';
+        preEl.appendChild(codeEl);
+        document.getElementById('bd-wrapper').appendChild(preEl);
+    })();
+</script>
+
+<script>
+    (function () {
+        fabric.util.addListener(fabric.window, 'load', function () {
+            var canvas = this.__canvas || this.canvas,
+                    canvases = this.__canvases || this.canvases;
+
+            canvas && canvas.calcOffset && canvas.calcOffset();
+
+            if (canvases && canvases.length) {
+                for (var i = 0, len = canvases.length; i < len; i++) {
+                    canvases[i].calcOffset();
+                }
+            }
+        });
+    })();
+</script>
+
+
+
+</body>
+</html>
