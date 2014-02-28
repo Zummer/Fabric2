@@ -7,7 +7,7 @@
     <style type="text/css">
         @font-face {
             font-family: myFirstFont;
-            src: local('myFirstFont'), url('./opentype/fonts/Roboto-Black.ttf') format('truetype');
+            src: local('myFirstFont'), url('./opentype2/fonts/Roboto-Black.ttf') format('truetype');
             /*font-style: normal;
             font-weight: 400;*/
         }
@@ -16,6 +16,7 @@
 
     <script src="./Kitchensink_files/fabric.js"></script>
     <script src="./Kitchensink_files/angular.js"></script>
+    <script src="./opentype2/opentype.js"></script>
 
 </head>
 <body>
@@ -48,6 +49,10 @@
     <script src="./Kitchensink_files/controller.js"></script>
 </div>
 
+<svg id="svgPreview" width="940" height="300" style="border: solid black 1px">
+    <path id="pathPreview" d=""></path>
+</svg>
+
 <script>
     (function () {
         var mainScriptEl = document.getElementById('main');
@@ -77,8 +82,16 @@
         });
     })();
 </script>
-
-
+<script>
+    var font = null;
+    opentype.load('./opentype2/fonts/Roboto-Black.ttf', function (err, font) {
+        if (err) {
+            showErrorMessage(err.toString());
+            return;
+        }
+        window.font = font;
+    });
+</script>
 
 </body>
 </html>

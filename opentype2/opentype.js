@@ -58,7 +58,8 @@
         }
 
         dstroke = dstrokeArray.join(" ");
-        var svg1 = document.getElementById("svgPreview");
+        // здесь надо будет создать виртуальный объект svg и его path
+        //var svg1 = document.getElementById("svgPreview");
         var path1 = document.getElementById("pathPreview");
         path1.setAttribute("d",dstroke);
         var path1length = path1.getTotalLength();

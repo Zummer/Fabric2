@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Kitchensink_files/fabric.js" line="19162" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/Kitchensink_files/fabric.js" line="18904" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/Kitchensink_files/fabric.js" line="15339" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/Kitchensink_files/fabric.js" line="18824" mnemonic="5" />
+    <bookmark url="file://$PROJECT_DIR$/Kitchensink_files/controller.js" line="672" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e6bacf1a-7860-4ea8-a49d-dd2e08045e9b" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Fabric\opentype\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\bin\ot" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\bin\start_server" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\Delicious_500.font.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\Roboto-Black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\Roboto_Bk_400.font.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\ari_400.font.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\arial.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\calibri.cufonfonts.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\cuprum.cufonfonts.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\fonts\molot.cufonfonts.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\g\hello-world.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\opentype.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fabric\opentype\package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kitchensink_files/app_config.js" afterPath="$PROJECT_DIR$/Kitchensink_files/app_config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kitchensink_files/controller.js" afterPath="$PROJECT_DIR$/Kitchensink_files/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opentype2/opentype.js" afterPath="$PROJECT_DIR$/opentype2/opentype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotfabric.html" afterPath="$PROJECT_DIR$/plotfabric.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list id="33752f6d-6368-47db-acfd-b9f9b14f6b8a" name="Rejected commit: Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/fonts/Roboto-Black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/g/hello-world.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/opentype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/bin/ot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opentype2/bin/start_server" />
     </list>
     <ignored path="Fabric.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/opentype2/index.html" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +54,120 @@
     <favorites_list name="Fabric" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/opentype2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="77" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.46391752" vertical-offset="2433" max-vertical-offset="6018">
-              <folding>
-                <marker date="1393487199303" expanded="false" signature="8829:8835" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="plotfabric.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/plotfabric.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="67" column="0" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.29334918" vertical-offset="892" max-vertical-offset="1734">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="opentype.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/opentype2/opentype.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="492" column="58" selection-start="18343" selection-end="18343" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="18394">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fabric.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19174" column="42" selection-start="551329" selection-end="551329" vertical-scroll-proportion="0.0" vertical-offset="325857" max-vertical-offset="366996">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Kitchensink.htm" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="466" column="9" selection-start="19619" selection-end="20495" vertical-scroll-proportion="0.0" vertical-offset="7346" max-vertical-offset="8109">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="874" column="0" selection-start="21940" selection-end="21940" vertical-scroll-proportion="0.0" vertical-offset="14517" max-vertical-offset="15385">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <marker date="1393562111345" expanded="false" signature="14504:14554" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="angular.min.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3519">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12146" column="0" selection-start="413493" selection-end="413493" vertical-scroll-proportion="0.0" vertical-offset="206338" max-vertical-offset="354943">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app_config.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="49" column="3" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="935">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="fabric.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19153" column="32" selection-start="550526" selection-end="550526" vertical-scroll-proportion="0.0" vertical-offset="324628" max-vertical-offset="366996">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/opentype2/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="322" column="0" selection-start="9378" selection-end="9378" vertical-scroll-proportion="0.3696408" vertical-offset="5155" max-vertical-offset="6018">
+                  <folding>
+                    <marker date="1393490651926" expanded="false" signature="8829:8835" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -97,9 +213,10 @@
         <option value="$PROJECT_DIR$/kitchensink_files/fabric.js" />
         <option value="$PROJECT_DIR$/Kitchensink_files/fabric.js" />
         <option value="$PROJECT_DIR$/Kitchensink.htm" />
-        <option value="$PROJECT_DIR$/Kitchensink_files/controller.js" />
+        <option value="$PROJECT_DIR$/opentype2/opentype.js" />
         <option value="$PROJECT_DIR$/plotfabric.html" />
-        <option value="$PROJECT_DIR$/opentype2/index.html" />
+        <option value="$PROJECT_DIR$/Kitchensink_files/app_config.js" />
+        <option value="$PROJECT_DIR$/Kitchensink_files/controller.js" />
       </list>
     </option>
   </component>
@@ -172,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric2" />
+              <option name="myItemId" value="Fabric" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -182,39 +299,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric2" />
+              <option name="myItemId" value="Fabric" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="opentype2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opentype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fabric2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kitchensink_files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,6 +327,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
     <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -250,11 +340,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.plotfabric.html">
-    <configuration default="false" name="mapPosition.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Fabric/mapPosition.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="kitchensink.htm" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Fabric/kitchensink.htm">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -265,7 +350,7 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Fabric/opentype/index.html">
+    <configuration default="false" name="opentype2" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Fabric/opentype2/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -275,8 +360,17 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Fabric/opentype2/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -285,23 +379,27 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.mapPosition.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.kitchensink.htm" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.plotfabric.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Kitchensink.htm" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.kitchensink.htm" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.plotfabric.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.opentype2" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Kitchensink.htm" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.plotfabric.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Kitchensink.htm" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.kitchensink.htm" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.mapPosition.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.opentype2" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Kitchensink.htm" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.kitchensink.htm" />
       </list>
     </recent_temporary>
   </component>
@@ -335,27 +433,26 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27894738" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970588" sideWeight="0.49895832" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45416227" sideWeight="0.50104165" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17199148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970588" sideWeight="0.49895832" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45416227" sideWeight="0.50104165" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27941176" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -373,11 +470,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -392,7 +489,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,18 +499,272 @@
           <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="225" />
+      <option name="time" value="246" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="466" column="9" selection-start="19619" selection-end="20495" vertical-scroll-proportion="0.0" vertical-offset="7346" max-vertical-offset="8109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="657" column="11" selection-start="16293" selection-end="16293" vertical-scroll-proportion="0.0" vertical-offset="11037" max-vertical-offset="14994">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1393562111345" expanded="false" signature="14504:14554" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12146" column="0" selection-start="413493" selection-end="413493" vertical-scroll-proportion="0.0" vertical-offset="206338" max-vertical-offset="354943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19174" column="42" selection-start="551329" selection-end="551329" vertical-scroll-proportion="0.0" vertical-offset="325857" max-vertical-offset="366996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotfabric.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="13" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="466" column="9" selection-start="19619" selection-end="20495" vertical-scroll-proportion="0.0" vertical-offset="7346" max-vertical-offset="8109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="657" column="11" selection-start="16293" selection-end="16293" vertical-scroll-proportion="0.0" vertical-offset="11037" max-vertical-offset="14994">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1393562111345" expanded="false" signature="14504:14554" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12146" column="0" selection-start="413493" selection-end="413493" vertical-scroll-proportion="0.0" vertical-offset="206338" max-vertical-offset="354943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19174" column="42" selection-start="551329" selection-end="551329" vertical-scroll-proportion="0.0" vertical-offset="325857" max-vertical-offset="366996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotfabric.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="88" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8139" column="31" selection-start="232577" selection-end="232577" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="366724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="8109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="906" max-vertical-offset="14977">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1393562111345" expanded="false" signature="14504:14554" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11916" column="0" selection-start="404383" selection-end="404383" vertical-scroll-proportion="0.0" vertical-offset="202421" max-vertical-offset="354943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/fabric2/kitchensink_files/controller2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="15028" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/master.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/follow_button.1392079123.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13068" selection-start="13290" selection-end="13290" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/ga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207" />
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="16" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="15929" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/show.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/paster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="347" column="38" selection-start="20553" selection-end="20553" vertical-scroll-proportion="0.41133004" vertical-offset="5732" max-vertical-offset="7514" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/calibri.cufonfonts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="60" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/font_definitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3230" />
+      </provider>
+    </entry>
     <entry file="http://localhost:63342/Fabric/fabric/dist/fabric.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric(1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="440" selection-end="440" vertical-scroll-proportion="0.5629139" vertical-offset="0" max-vertical-offset="1836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/fabric2/kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="462" column="36" selection-start="11500" selection-end="11504" vertical-scroll-proportion="0.332696" vertical-offset="7680" max-vertical-offset="14331" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1437" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/fabric2/kitchensink_files/controller2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="15028" />
       </provider>
     </entry>
     <entry file="http://localhost:63342/assets/escheresque.png">
@@ -425,34 +775,69 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12146" column="0" selection-start="413493" selection-end="413493" vertical-scroll-proportion="0.0" vertical-offset="206338" max-vertical-offset="354943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1256" column="35" selection-start="21871" selection-end="21871" vertical-scroll-proportion="0.4074074" vertical-offset="21176" max-vertical-offset="37060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opentype/index.html">
+    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6103">
+        <state line="466" column="9" selection-start="19619" selection-end="20495" vertical-scroll-proportion="0.0" vertical-offset="7346" max-vertical-offset="8109">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451" />
+        <state line="19174" column="42" selection-start="551329" selection-end="551329" vertical-scroll-proportion="0.0" vertical-offset="325857" max-vertical-offset="366996">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.js">
+    <entry file="file://$PROJECT_DIR$/opentype2/opentype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="354943" />
+        <state line="492" column="58" selection-start="18343" selection-end="18343" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="18394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="3" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="935">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opentype2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="77" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.46391752" vertical-offset="2433" max-vertical-offset="6018">
+        <state line="322" column="0" selection-start="9378" selection-end="9378" vertical-scroll-proportion="0.3696408" vertical-offset="5155" max-vertical-offset="6018">
           <folding>
-            <marker date="1393487199303" expanded="false" signature="8829:8835" placeholder="..." />
+            <marker date="1393490651926" expanded="false" signature="8829:8835" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="874" column="0" selection-start="21940" selection-end="21940" vertical-scroll-proportion="0.0" vertical-offset="14517" max-vertical-offset="15385">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1393562111345" expanded="false" signature="14504:14554" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotfabric.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.29334918" vertical-offset="892" max-vertical-offset="1734">
+          <folding />
         </state>
       </provider>
     </entry>

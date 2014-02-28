@@ -1,3 +1,24 @@
+//var myfontSize = 150;
+//var objs = canvas._objects;
+//var mytext = objs[0].text;
+
+
+function getAllLength(text, fontSize, font) {
+    if (!font) return;
+    var textpath = font.getPath(text, 0, 200, fontSize);
+    return textpath.getLength();
+}
+
+function showErrorMessage(message) {
+    var el = document.getElementById('message');
+    el.style.display = 'block';
+    el.innerHTML = message;
+}
+
+//var pathLength = document.getElementById('pathLength');
+//pathLength.value = getAllLength(mytext, fontSize, font);
+
+
 function getCharsCount(object) {
     var lines = object.text.split(object._reNewline);
     var charsCount = 0;
@@ -142,6 +163,7 @@ function addAccessors($scope) {
   $scope.getText = function() {
     return getActiveProp('text'); //'text'
   };
+
   $scope.setText = function(value) {
     setActiveProp('text', value);
   };
@@ -676,7 +698,6 @@ function addAccessors($scope) {
 
   addTexts();
 
-
   $scope.getFreeDrawingMode = function() {
     return canvas.isDrawingMode;
   };
@@ -855,6 +876,8 @@ function watchCanvas($scope) {
   function updateScope() {
     $scope.$$phase || $scope.$digest();
     canvas.renderAll();
+    //if($scope... === 'IText'){}
+        getAllLength(getActiveProp('text'), getActiveProp('fontSize'), window.font);
   }
 
   canvas
