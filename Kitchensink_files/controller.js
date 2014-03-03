@@ -1,19 +1,10 @@
-//var myfontSize = 150;
-//var objs = canvas._objects;
-//var mytext = objs[0].text;
-
-
-function getAllLength(text, fontSize, font) {
+function getLength(text, fontSize, font) {
     if (!font) return;
     var textpath = font.getPath(text, 0, 200, fontSize);
     return textpath.getLength();
 }
 
-function showErrorMessage(message) {
-    var el = document.getElementById('message');
-    el.style.display = 'block';
-    el.innerHTML = message;
-}
+
 
 //var pathLength = document.getElementById('pathLength');
 //pathLength.value = getAllLength(mytext, fontSize, font);
@@ -45,11 +36,16 @@ function getLengthPath () {
     var object = canvas.getActiveObject();
     if (!object) return '';
     if (object instanceof fabric.IText){
-        if (object.isEmptyStyles()) {
-            return "Нет стилей" || '';
-        } else {
-            return object.styles[0][0].myPath;
-        }
+            // тут надо переделать, отталкиваться от количества стилей
+            var textLines = object.text.split(object._reNewline);
+            var totalLengthInPixels = 0;
+            for (var i=0;i<textLines.length;i++ ){
+                var line = textLines[i];
+                for (var j=0;j<line.length;j++ ){
+                    totalLengthInPixels += object.styles[i][j].myPath;
+                }
+            }
+            return totalLengthInPixels;
     }
 }
 
@@ -304,10 +300,10 @@ function addAccessors($scope) {
   $scope.addText = function() {
     var text = 'Ваш текст';
 
-    var textSample = new fabric.Text(text.slice(0, getRandomInt(0, text.length)), {
+    var textSample = new fabric.IText(text.slice(0, getRandomInt(0, text.length)), {
       left: getRandomInt(100, 200),
       top: getRandomInt(100, 200),
-      fontFamily: 'myFirstFont',
+      fontFamily: fontsPaths[0].fontFamily,
       angle: getRandomInt(-10, 10),
       fill: '#' + getRandomColor(),
       scaleX: 0.5,
@@ -315,9 +311,16 @@ function addAccessors($scope) {
       fontWeight: '',
       originX: 'left',
       hasRotatingPoint: true,
-      centerTransform: true
+      centerTransform: true,
+      styles:{
+          0: {
+              0: { fill: 'red'},
+              1: { fill: 'red'},
+              2: { fill: 'red'}
+          }
+      }
     });
-
+    textSample.font = window.fonts[0];
     canvas.add(textSample);
   };
 
@@ -672,10 +675,12 @@ function addAccessors($scope) {
 
   function addTexts() {
 
+
+
      var sampleText = new fabric.IText('foo bar\nbaz\nquux', {
       left: 200,
       top: 150,
-      fontFamily: 'myFirstFont',
+      fontFamily: fontsPaths[0].fontFamily,
       fill: '#333',
          //caching: false,
       styles: {
@@ -692,9 +697,12 @@ function addAccessors($scope) {
         }
       }
     });
-
+      sampleText.font = window.fonts[0];
     canvas.add(sampleText);
+
   }
+
+
 
   addTexts();
 
@@ -877,7 +885,8 @@ function watchCanvas($scope) {
     $scope.$$phase || $scope.$digest();
     canvas.renderAll();
     //if($scope... === 'IText'){}
-        getAllLength(getActiveProp('text'), getActiveProp('fontSize'), window.font);
+//      getLength(getActiveProp('text'), getActiveProp('fontSize'), window.fonts[0]);
+      // здесь надо указать шрифт который содержит название fontFamily
   }
 
   canvas

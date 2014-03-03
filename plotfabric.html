@@ -4,26 +4,47 @@
 <head>
     <title></title>
 
+    <!-- загружаем opentype вперед всех, что бы заранее подгрузить шрифты -->
+    <script src="./opentype2/opentype.js"></script>
+    <script>
+        var fonts = [];
+        var fontsPaths = [
+            {fontFamily: 'Roboto-Black', path: './opentype2/fonts/Roboto-Black.ttf'}
+        ];
+        // загружаем шрифты и передаем их в массив fonts[]
+        for (var i = 0; i < fontsPaths.length; i++) {
+            var fontForLoad = fontsPaths[i];
+            opentype.load(fontForLoad.path, function (err, font) {
+                if (err) {
+                    showErrorMessage(err.toString());
+                    return;
+                }
+                window.fonts.push(font);
+            });
+        }
+        // сообщить об ошибке загрузки
+        function showErrorMessage(message) {
+            alert(message);
+        }
+    </script>
+
     <style type="text/css">
+        /* определяем семейства специальных шрифтов */
         @font-face {
-            font-family: myFirstFont;
-            src: local('myFirstFont'), url('./opentype2/fonts/Roboto-Black.ttf') format('truetype');
-            /*font-style: normal;
-            font-weight: 400;*/
+            font-family: Roboto-Black;
+            src: url('./opentype2/fonts/Roboto-Black.ttf');
         }
     </style>
 
-
     <script src="./Kitchensink_files/fabric.js"></script>
     <script src="./Kitchensink_files/angular.js"></script>
-    <script src="./opentype2/opentype.js"></script>
 
 </head>
 <body>
 <div id="bd-wrapper" ng-controller="CanvasControls">
     <h2><span style="font-family: myFirstFont">Fabric.js демо</span> · Плоттерная резка</h2>
 
-    <canvas id="canvas" width="600" height="400" style="border : solid red 1px;"></canvas>
+    <canvas id="canvas" width="600" height="300" style="border : solid red 1px;"></canvas>
     <!--style="position:relative; width:604px; float:left;-->
 
     <div id="text-wrapper" style="margin-top: 10px">
@@ -52,46 +73,6 @@
 <svg id="svgPreview" width="940" height="300" style="border: solid black 1px">
     <path id="pathPreview" d=""></path>
 </svg>
-
-<script>
-    (function () {
-        var mainScriptEl = document.getElementById('main');
-        if (!mainScriptEl) return;
-        var preEl = document.createElement('pre');
-        var codeEl = document.createElement('code');
-        codeEl.innerHTML = mainScriptEl.innerHTML;
-        codeEl.className = 'language-javascript';
-        preEl.appendChild(codeEl);
-        document.getElementById('bd-wrapper').appendChild(preEl);
-    })();
-</script>
-
-<script>
-    (function () {
-        fabric.util.addListener(fabric.window, 'load', function () {
-            var canvas = this.__canvas || this.canvas,
-                    canvases = this.__canvases || this.canvases;
-
-            canvas && canvas.calcOffset && canvas.calcOffset();
-
-            if (canvases && canvases.length) {
-                for (var i = 0, len = canvases.length; i < len; i++) {
-                    canvases[i].calcOffset();
-                }
-            }
-        });
-    })();
-</script>
-<script>
-    var font = null;
-    opentype.load('./opentype2/fonts/Roboto-Black.ttf', function (err, font) {
-        if (err) {
-            showErrorMessage(err.toString());
-            return;
-        }
-        window.font = font;
-    });
-</script>
 
 </body>
 </html>

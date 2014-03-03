@@ -19135,9 +19135,10 @@ fabric.Image.filters.BaseFilter = fabric.util.createClass(/** @lends fabric.Imag
      */
     _renderChars: function(method, ctx, line, left, top, lineIndex) {
 
-      if (this.isEmptyStyles()) {
-        return this._renderCharsFast(method, ctx, line, left, top);
-      }
+        // Отменил, поскольку стили нужны всегда и они будут создаваться по любому
+      /*if (this.isEmptyStyles()) {
+            return this._renderCharsFast(method, ctx, line, left, top);
+        }*/
 
       this.skipTextAlign = true;
 
@@ -19172,7 +19173,13 @@ fabric.Image.filters.BaseFilter = fabric.util.createClass(/** @lends fabric.Imag
         }
           //Афанасьев// запись кривых в стили
           var style = { };
-          style['myPath'] = Math.random();
+         if (i<len) {
+            style['myPath'] = getLength(chars[i],this.fontSize,this.font);
+         }else{
+             style['myPath'] = '';
+         }
+
+          // Создаем стили если их нет
           if (!this.styles[lineIndex]) {
               this.styles[lineIndex] = { };
           }
