@@ -45,7 +45,7 @@ function getLengthPath () {
                     totalLengthInPixels += object.styles[i][j].myPath;
                 }
             }
-            return totalLengthInPixels;
+            return totalLengthInPixels * object.scaleX;
     }
 }
 

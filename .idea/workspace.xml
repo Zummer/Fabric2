@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6bacf1a-7860-4ea8-a49d-dd2e08045e9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kitchensink_files/controller.js" afterPath="$PROJECT_DIR$/Kitchensink_files/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kitchensink_files/fabric.js" afterPath="$PROJECT_DIR$/Kitchensink_files/fabric.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotfabric.html" afterPath="$PROJECT_DIR$/plotfabric.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fabric.iws" />
@@ -35,14 +33,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plotfabric.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="plotfabric.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plotfabric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="0.2746365" vertical-offset="0" max-vertical-offset="1411">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="21" column="40" selection-start="777" selection-end="777" vertical-scroll-proportion="-1.9615384" vertical-offset="306" max-vertical-offset="1411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kitchensink.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="452" column="13" selection-start="20105" selection-end="20105" vertical-scroll-proportion="-13.0" vertical-offset="7346" max-vertical-offset="8109">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,10 +63,19 @@
       <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="15538">
+            <state line="56" column="52" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="15538">
               <folding>
-                <marker date="1393679143912" expanded="false" signature="14780:14830" placeholder="..." />
+                <marker date="1393899621403" expanded="false" signature="14796:14846" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Curve.htm" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Curve.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="9" selection-start="6766" selection-end="6766" vertical-scroll-proportion="2.9794521" vertical-offset="1106" max-vertical-offset="6987">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +83,7 @@
       <file leaf-file-name="app_config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+            <state line="24" column="67" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -88,7 +101,7 @@
       <file leaf-file-name="fabric.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21398" column="3" selection-start="615100" selection-end="615100" vertical-scroll-proportion="-5.8076925" vertical-offset="363615" max-vertical-offset="367115">
+            <state line="19177" column="15" selection-start="551492" selection-end="551492" vertical-scroll-proportion="-10.0" vertical-offset="325749" max-vertical-offset="367115">
               <folding />
             </state>
           </provider>
@@ -159,18 +172,19 @@
         <option value="$PROJECT_DIR$/Kitchensink.htm" />
         <option value="$PROJECT_DIR$/opentype2/opentype.js" />
         <option value="$PROJECT_DIR$/Kitchensink_files/app_config.js" />
-        <option value="$PROJECT_DIR$/Kitchensink_files/controller.js" />
         <option value="$PROJECT_DIR$/Kitchensink_files/fabric.js" />
         <option value="$PROJECT_DIR$/plotfabric.html" />
+        <option value="$PROJECT_DIR$/Kitchensink_files/controller.js" />
+        <option value="$PROJECT_DIR$/Curve.htm" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="735" />
+    <option name="y" value="42" />
+    <option name="width" value="1135" />
+    <option name="height" value="946" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -235,6 +249,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kitchensink_files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,34 +390,38 @@
       <created>1393562387397</created>
       <updated>1393562387397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit&#10;">
+      <created>1393822181137</created>
+      <updated>1393822181137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="735" y="42" width="1135" height="946" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27693966" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5075431" sideWeight="0.49895832" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45416227" sideWeight="0.50104165" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26435935" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19684309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19382322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5075431" sideWeight="0.49895832" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26435935" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45416227" sideWeight="0.50104165" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2775378" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -408,11 +440,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26435935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -456,15 +488,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="657" column="11" selection-start="16293" selection-end="16293" vertical-scroll-proportion="0.0" vertical-offset="11037" max-vertical-offset="14994">
-          <folding>
-            <marker date="1393679143912" expanded="false" signature="14780:14830" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="47092" selection-end="47092" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3519">
@@ -481,7 +504,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071" />
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
@@ -501,10 +526,7 @@
     <entry file="file://$PROJECT_DIR$/plotfabric.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="13" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1513">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,7 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="657" column="11" selection-start="16293" selection-end="16293" vertical-scroll-proportion="0.0" vertical-offset="11037" max-vertical-offset="14994">
           <folding>
-            <marker date="1393679143912" expanded="false" signature="14780:14830" placeholder="..." />
+            <marker date="1393899621403" expanded="false" signature="14796:14846" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -540,7 +562,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071" />
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
@@ -560,10 +584,7 @@
     <entry file="file://$PROJECT_DIR$/plotfabric.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="88" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,7 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="0" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="906" max-vertical-offset="14977">
           <folding>
-            <marker date="1393679143912" expanded="false" signature="14780:14830" placeholder="..." />
+            <marker date="1393899621403" expanded="false" signature="14796:14846" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -611,7 +632,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071" />
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1071">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
@@ -692,10 +715,10 @@
       </provider>
     </entry>
     <entry file="http://localhost:63342/assets/escheresque.png">
-      <provider selected="true" editor-type-id="httpFileEditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="httpFileEditor">
         <state />
       </provider>
     </entry>
@@ -708,19 +731,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kitchensink_files/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071" />
+        <state line="49" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opentype2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="342" column="0" selection-start="9973" selection-end="9973" vertical-scroll-proportion="17.303572" vertical-offset="0" max-vertical-offset="6018">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="449" column="13" selection-start="20077" selection-end="20077" vertical-scroll-proportion="0.8541667" vertical-offset="7346" max-vertical-offset="8109">
           <folding />
         </state>
       </provider>
@@ -744,18 +762,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="15538">
-          <folding>
-            <marker date="1393679143912" expanded="false" signature="14780:14830" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+        <state line="832" column="17" selection-start="12924" selection-end="12924" vertical-scroll-proportion="0.0" vertical-offset="13929" max-vertical-offset="15929">
           <folding />
         </state>
       </provider>
@@ -767,27 +776,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/app_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="832" column="17" selection-start="12924" selection-end="12924" vertical-scroll-proportion="0.0" vertical-offset="13929" max-vertical-offset="15929">
+        <state line="24" column="67" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+    <entry file="file://$PROJECT_DIR$/Kitchensink.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21398" column="3" selection-start="615100" selection-end="615100" vertical-scroll-proportion="-5.8076925" vertical-offset="363615" max-vertical-offset="367115">
+        <state line="452" column="13" selection-start="20105" selection-end="20105" vertical-scroll-proportion="-13.0" vertical-offset="7346" max-vertical-offset="8109">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plotfabric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="0.2746365" vertical-offset="0" max-vertical-offset="1411">
+        <state line="21" column="40" selection-start="777" selection-end="777" vertical-scroll-proportion="-1.9615384" vertical-offset="306" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/fabric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19177" column="15" selection-start="551492" selection-end="551492" vertical-scroll-proportion="-10.0" vertical-offset="325749" max-vertical-offset="367115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kitchensink_files/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="52" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="15538">
           <folding>
-            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1393899621403" expanded="false" signature="14796:14846" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Curve.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="9" selection-start="6766" selection-end="6766" vertical-scroll-proportion="2.9794521" vertical-offset="1106" max-vertical-offset="6987">
+          <folding />
         </state>
       </provider>
     </entry>
