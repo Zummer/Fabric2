@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://fabricjs.com/quadratic-curve/ -->
+<html lang="en" ng-app="kitchensink"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{border-spacing:1px 1px;-ms-zoom:1.0001;}.ng-animate-active{border-spacing:0px 0px;-ms-zoom:1;}</style>
+    <meta charset="utf-8">
+
+    <title>Quadratic Curve | Fabric.js Demos</title>
+
+    <link rel="stylesheet" href="http://fabricjs.com/css/master.css">
+    <link rel="stylesheet" href="http://fabricjs.com/css/prism.css">
+    <style>
+      pre { margin-left: 15px !important }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="../lib/excanvas.js"></script>
+    <![endif]-->
+
+    <script id="twitter-wjs" src="./Curve_files/widgets.js"></script><script async="" src="./Curve_files/load.js"></script><script type="text/javascript" async="" src="./Curve_files/ga.js"></script><script src="./Curve_files/prism.js"></script>
+    <script src="./Curve_files/fabric.js"></script>
+    <script src="./Curve_files/master.js"></script>
+
+    <script src="./Curve_files/angular.min.js"></script>
+  </head>
+  <body data-twttr-rendered="true">
+    <ul id="header">
+  <li><a href="http://fabricjs.com/">Home</a></li>
+  <li><a href="http://fabricjs.com/demos">Demos</a></li>
+  <li><a href="http://fabricjs.com/articles">Tutorial</a></li>
+  <li><a href="http://fabricjs.com/docs">Docs</a></li>
+  <li><a href="http://fabricjs.com/build">Custom Build</a></li>
+  <li><a href="http://fabricjs.com/help">Support</a></li>
+  <li><a href="http://fabricjs.com/test">Tests/Benchmarks</a></li>
+  <li><a href="http://fabricjs.com/team">Team</a></li>
+
+  <li class="secondary">
+    <a href="https://codeclimate.com/repos/526a0ed089af7e6cf2001389/feed">
+      <img src="./Curve_files/gpa.png">
+    </a>
+    <a href="http://travis-ci.org/#!/kangax/fabric.js">
+      <img src="./Curve_files/fabric.js.png">
+    </a>
+  </li>
+  <li class="gittip secondary">
+    <iframe style="border: 0; margin: 0; padding: 0;" src="./Curve_files/widget.htm" width="48pt" height="22pt"></iframe>
+  </li>
+  <li class="flattr secondary">
+    <iframe src="./Curve_files/saved_resource.htm" class="FlattrButton" width="110" height="20" frameborder="0" scrolling="no" title="Flattr" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+    <noscript>
+      &lt;a href="http://flattr.com/thing/391332/Fabric-js" target="_blank"&gt;
+        &lt;img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /&gt;
+      &lt;/a&gt;
+    </noscript>
+  </li>
+  <li class="github secondary">
+    <iframe src="./Curve_files/github-btn.htm" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+  </li>
+  <li class="twitter secondary">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Curve_files/follow_button.1393899192.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 215px; height: 20px;"></iframe>
+  </li>
+</ul>
+
+<script>
+(function() {
+
+  if (document.location.hostname === 'localhost') {
+    var links = document.getElementById('header').getElementsByTagName('a');
+    for (var i = 0, len = links.length; i < len; i++) {
+      // very retarted fix but fuck it
+      links[i].href = links[i].href.replace('fabricjs.com', 'localhost:4000');
+    }
+  }
+  else {
+    var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+    s.async = true;
+    s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+    t.parentNode.insertBefore(s, t);
+
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  }
+})();
+</script>
+
+
+    <div id="bd-wrapper" ng-controller="CanvasControls">
+      <h2><span>Fabric.js demos</span> · Quadratic Curve</h2>
+
+      <p>by <em>Neil Harris</em></p>
+
+    <canvas id="c" width="500" height="500"</canvas>
+
+<script id="main">(function() {
+  var canvas = this.__canvas = new fabric.Canvas('c');
+  canvas.pText = null;
+  fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
+
+  canvas.on({
+    'object:selected': onObjectSelected,
+    'object:moving': onObjectMoving,
+    'before:selection:cleared': onBeforeSelectionCleared
+  });
+
+  (function drawQuadratic() {
+
+    var line = new fabric.Path('M 65 0 L 200, 0', { fill: '', stroke: 'black' });
+
+    line.path[0][1] = 100;
+    line.path[0][2] = 100;
+
+    line.path[1][1] = 200;
+    line.path[1][2] = 200;
+
+    /*line.path[1][3] = 300;
+    line.path[1][4] = 100;
+*/
+    line.selectable = false;
+    canvas.add(line);
+
+    var p1 = makeCurveCircle(200, 200, line)
+    p1.name = "p1";
+    canvas.add(p1);
+
+    var p0 = makeCurveCircle(100, 100, line);
+    p0.name = "p0";
+    canvas.add(p0);
+
+    canvas.pText = makeText(line);
+    canvas.pText.name = "pText";
+    canvas.add(canvas.pText);
+
+  })();
+
+    function makeText(line) {
+
+        //var centerOfText = {x:w / 2, y:h / 2);
+        var c = new fabric.Text('200см',{
+            left: 300,
+            top: 300,
+            backgroundColor: 'yellow'
+        });
+
+        c.hasBorders = c.hasControls = false;
+        c.line = line;
+
+        return c;
+    }
+
+  function makeCurveCircle(left, top, line) {
+    var c = new fabric.Circle({
+      left: left,
+      top: top,
+      strokeWidth: 1,
+      radius: 4,
+      fill: '#fff',
+      stroke: '#666'
+    });
+
+    c.hasBorders = c.hasControls = false;
+
+    c.line = line;
+
+    return c;
+  }
+
+  function makeCurvePoint(left, top, line) {
+    var c = new fabric.Circle({
+      left: left,
+      top: top,
+      strokeWidth: 1,
+      radius: 4,
+      fill: '#fff',
+      stroke: '#666'
+    });
+
+    c.hasBorders = c.hasControls = false;
+
+    c.line = line;
+
+    return c;
+  }
+
+  function onObjectSelected(e) {
+/*    var activeObject = e.target;
+
+    if (activeObject.name == "p0" || activeObject.name == "p2") {
+      activeObject.line2.animate('opacity', '100', {
+        duration: 200,
+        onChange: canvas.renderAll.bind(canvas),
+      });
+      activeObject.line2.selectable = true;
+    }*/
+  }
+
+  function onBeforeSelectionCleared(e) {
+ /*   var activeObject = e.target;
+    if (activeObject.name == "p0" || activeObject.name == "p2") {
+      activeObject.line2.animate('opacity', '100', {
+        duration: 200,
+        onChange: canvas.renderAll.bind(canvas),
+      });
+      //activeObject.line2.selectable = false;
+    }
+    else if (activeObject.name == "p1") {
+      activeObject.animate('opacity', '100', {
+        duration: 200,
+        onChange: canvas.renderAll.bind(canvas),
+      });
+      //activeObject.selectable = false;
+    }*/
+  }
+
+  function onObjectMoving(e) {
+      if (e.target.name == "p0" || e.target.name == "p2") {
+      var p = e.target;
+
+      if (p.line) {
+        p.line.path[0][1] = p.left;
+        p.line.path[0][2] = p.top;
+          canvas.pText.left = p.line.path[0][1] + 100;
+          canvas.pText.top = p.line.path[0][2] + 100;
+
+
+      }
+      /*else if (p.line3) {
+        p.line3.path[1][3] = p.left;
+        p.line3.path[1][4] = p.top;
+      }*/
+    }
+    else if (e.target.name == "p1") {
+    var p = e.target;
+
+      if (p.line) {
+        p.line.path[1][1] = p.left;
+        p.line.path[1][2] = p.top;
+      }
+    }
+    /*else if (e.target.name == "p0" || e.target.name == "p2") {
+      var p = e.target;
+
+      p.line1 && p.line1.set({ 'x2': p.left, 'y2': p.top });
+      p.line2 && p.line2.set({ 'x1': p.left, 'y1': p.top });
+      p.line3 && p.line3.set({ 'x1': p.left, 'y1': p.top });
+      p.line4 && p.line4.set({ 'x1': p.left, 'y1': p.top });
+    }*/
+  }
+
+
+    //var centerOfLine = {x:w / 2, y:h / 2);
+
+})();
+</script>
+
+    <pre class=" language-javascript"><code class=" language-javascript"><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> canvas <span class="token operator">=</span> this<span class="token punctuation">.</span>__canvas <span class="token operator">=</span> <span class="token keyword">new</span> fabric<span class="token punctuation">.</span>Canvas<span class="token punctuation">(</span><span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  fabric<span class="token punctuation">.</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>originX <span class="token operator">=</span> fabric<span class="token punctuation">.</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>originY <span class="token operator">=</span> <span class="token string">'center'</span><span class="token punctuation">;</span>
+
+  canvas<span class="token punctuation">.</span>on<span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">'object:selected'</span><span class="token punctuation">:</span> onObjectSelected<span class="token punctuation">,</span>
+    <span class="token string">'object:moving'</span><span class="token punctuation">:</span> onObjectMoving<span class="token punctuation">,</span>
+    <span class="token string">'before:selection:cleared'</span><span class="token punctuation">:</span> onBeforeSelectionCleared
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">(</span><span class="token keyword">function</span> drawQuadratic<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">var</span> line <span class="token operator">=</span> <span class="token keyword">new</span> fabric<span class="token punctuation">.</span>Path<span class="token punctuation">(</span><span class="token string">'M 65 0 Q 100, 100, 200, 0'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> fill<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> stroke<span class="token punctuation">:</span> <span class="token string">'black'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">;</span>
+    line<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+    line<span class="token punctuation">.</span>selectable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    canvas<span class="token number">.add</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> p1 <span class="token operator">=</span> makeCurvePoint<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> line<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
+    p1<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"p1"</span><span class="token punctuation">;</span>
+    canvas<span class="token number">.add</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> p0 <span class="token operator">=</span> makeCurveCircle<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> line<span class="token punctuation">,</span> p1<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    p0<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"p0"</span><span class="token punctuation">;</span>
+    canvas<span class="token number">.add</span><span class="token punctuation">(</span>p0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> p2 <span class="token operator">=</span> makeCurveCircle<span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> p1<span class="token punctuation">,</span> line<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    p2<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"p2"</span><span class="token punctuation">;</span>
+    canvas<span class="token number">.add</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> makeCurveCircle<span class="token punctuation">(</span>left<span class="token punctuation">,</span> top<span class="token punctuation">,</span> line1<span class="token punctuation">,</span> line2<span class="token punctuation">,</span> line3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> <span class="token number">c</span> <span class="token operator">=</span> <span class="token keyword">new</span> fabric<span class="token punctuation">.</span>Circle<span class="token punctuation">(</span><span class="token punctuation">{</span>
+      left<span class="token punctuation">:</span> left<span class="token punctuation">,</span>
+      top<span class="token punctuation">:</span> top<span class="token punctuation">,</span>
+      strokeWidth<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+      radius<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'#fff'</span><span class="token punctuation">,</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#666'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token number">c</span><span class="token punctuation">.</span>hasBorders <span class="token operator">=</span> <span class="token number">c</span><span class="token punctuation">.</span>hasControls <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token number">c</span><span class="token punctuation">.</span>line1 <span class="token operator">=</span> line1<span class="token punctuation">;</span>
+    <span class="token number">c</span><span class="token punctuation">.</span>line2 <span class="token operator">=</span> line2<span class="token punctuation">;</span>
+    <span class="token number">c</span><span class="token punctuation">.</span>line3 <span class="token operator">=</span> line3<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">c</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> makeCurvePoint<span class="token punctuation">(</span>left<span class="token punctuation">,</span> top<span class="token punctuation">,</span> line1<span class="token punctuation">,</span> line2<span class="token punctuation">,</span> line3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> <span class="token number">c</span> <span class="token operator">=</span> <span class="token keyword">new</span> fabric<span class="token punctuation">.</span>Circle<span class="token punctuation">(</span><span class="token punctuation">{</span>
+      left<span class="token punctuation">:</span> left<span class="token punctuation">,</span>
+      top<span class="token punctuation">:</span> top<span class="token punctuation">,</span>
+      strokeWidth<span class="token punctuation">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+      radius<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'#fff'</span><span class="token punctuation">,</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#666'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token number">c</span><span class="token punctuation">.</span>hasBorders <span class="token operator">=</span> <span class="token number">c</span><span class="token punctuation">.</span>hasControls <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token number">c</span><span class="token punctuation">.</span>line1 <span class="token operator">=</span> line1<span class="token punctuation">;</span>
+    <span class="token number">c</span><span class="token punctuation">.</span>line2 <span class="token operator">=</span> line2<span class="token punctuation">;</span>
+    <span class="token number">c</span><span class="token punctuation">.</span>line3 <span class="token operator">=</span> line3<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">c</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> onObjectSelected<span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> activeObject <span class="token operator">=</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>activeObject<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p0"</span> <span class="token operator">||</span> activeObject<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p2"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      activeObject<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>animate<span class="token punctuation">(</span><span class="token string">'opacity'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        duration<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        onChange<span class="token punctuation">:</span> canvas<span class="token punctuation">.</span>renderAll<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>canvas<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      activeObject<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>selectable <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> onBeforeSelectionCleared<span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> activeObject <span class="token operator">=</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>activeObject<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p0"</span> <span class="token operator">||</span> activeObject<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p2"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      activeObject<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>animate<span class="token punctuation">(</span><span class="token string">'opacity'</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        duration<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        onChange<span class="token punctuation">:</span> canvas<span class="token punctuation">.</span>renderAll<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>canvas<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      activeObject<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>selectable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>activeObject<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p1"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      activeObject<span class="token punctuation">.</span>animate<span class="token punctuation">(</span><span class="token string">'opacity'</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        duration<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        onChange<span class="token punctuation">:</span> canvas<span class="token punctuation">.</span>renderAll<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>canvas<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      activeObject<span class="token punctuation">.</span>selectable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> onObjectMoving<span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p0"</span> <span class="token operator">||</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p2"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>line1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p<span class="token punctuation">.</span>line1<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span>line1<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>top<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>line3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p<span class="token punctuation">.</span>line3<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span>line3<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>top<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p1"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>line2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>path<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">.</span>top<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p0"</span> <span class="token operator">||</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"p2"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">e</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+
+      p<span class="token punctuation">.</span>line1 <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>line1<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">'x2'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>left<span class="token punctuation">,</span> <span class="token string">'y2'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>top <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      p<span class="token punctuation">.</span>line2 <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>line2<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">'x1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>left<span class="token punctuation">,</span> <span class="token string">'y1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>top <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      p<span class="token punctuation">.</span>line3 <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>line3<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">'x1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>left<span class="token punctuation">,</span> <span class="token string">'y1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>top <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      p<span class="token punctuation">.</span>line4 <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>line4<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">'x1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>left<span class="token punctuation">,</span> <span class="token string">'y1'</span><span class="token punctuation">:</span> p<span class="token punctuation">.</span>top <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+
+    <script>
+      (function(){
+        var mainScriptEl = document.getElementById('main');
+        if (!mainScriptEl) return;
+        var preEl = document.createElement('pre');
+        var codeEl = document.createElement('code');
+        codeEl.innerHTML = mainScriptEl.innerHTML;
+        codeEl.className = 'language-javascript';
+        preEl.appendChild(codeEl);
+        document.getElementById('bd-wrapper').appendChild(preEl);
+      })();
+    </script>
+
+    <script>
+(function() {
+  fabric.util.addListener(fabric.window, 'load', function() {
+    var canvas = this.__canvas || this.canvas,
+        canvases = this.__canvases || this.canvases;
+
+    canvas && canvas.calcOffset && canvas.calcOffset();
+
+    if (canvases && canvases.length) {
+      for (var i = 0, len = canvases.length; i < len; i++) {
+        canvases[i].calcOffset();
+      }
+    }
+  });
+})();
+</script>
+
+
+  
+
+<script src="./Curve_files/ecomerce-context-sovetnik-fg.js" type="text/javascript" async=""></script><iframe src="./Curve_files/index.htm" style="display: none;"></iframe></body></html>

@@ -9,6 +9,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6bacf1a-7860-4ea8-a49d-dd2e08045e9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/fabric.js.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/gpa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/button.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/ecomerce-context-sovetnik-fg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/fabric(1).js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/fabric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/follow_button.1393899192.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/ga.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/github-btn.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/index.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/info.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/load.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/master.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/prism.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/saved_resource.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/storage.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/widget.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Curve_files/widgets.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fabric.iws" />
@@ -73,7 +94,7 @@
       <file leaf-file-name="Curve.htm" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Curve.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="5" selection-start="7473" selection-end="7473" vertical-scroll-proportion="0.47260273" vertical-offset="3497" max-vertical-offset="7327">
+            <state line="230" column="19" selection-start="7554" selection-end="7554" vertical-scroll-proportion="0.5657534" vertical-offset="3497" max-vertical-offset="7327">
               <folding />
             </state>
           </provider>
@@ -402,12 +423,16 @@
       <created>1393906343707</created>
       <updated>1393906343707</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit&#10;">
+      <created>1393906363826</created>
+      <updated>1393906363826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="735" y="42" width="1135" height="946" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -416,7 +441,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19684309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19684309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5075431" sideWeight="0.49895832" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26435935" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -823,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Curve.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="5" selection-start="7473" selection-end="7473" vertical-scroll-proportion="0.47260273" vertical-offset="3497" max-vertical-offset="7327">
+        <state line="230" column="19" selection-start="7554" selection-end="7554" vertical-scroll-proportion="0.5657534" vertical-offset="3497" max-vertical-offset="7327">
           <folding />
         </state>
       </provider>
